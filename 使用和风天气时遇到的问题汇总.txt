@@ -1,0 +1,17 @@
+1.调用接口太多次无法继续调用
+2.使用bs4库中的select函数无法爬取其页面内容
+3.直接读取select文件会有<p><\p>增加麻烦
+4.TypeError: a bytes-like object is required, not ‘str’
+5.如何联系前端与python后端
+6.网页所爬取的信息为json格式，如何将其按照需求的格式输出
+
+
+解决方案：
+1.购买接口
+2.首先先试用BeautifulSoup函数进行解析，使用print输出观察其格式，然后再正确使用select即可
+需要注意的是bs函数解析出来的信息与网页本身信息由一定出入，所以不能直接用目标网页的开发者工具所显示信息进行相应的爬取
+3.因为使用select获取信息所返回的对象是tag类型，所以需要使用xx[0].text来获取信息内容
+需要注意的是xx后面要加[0]，因为其是resultset对象，否则会发生错误
+4.在读取文件时后添加后缀.encode
+5.使用django框架
+6.使用json.loads()函数读取json格式
