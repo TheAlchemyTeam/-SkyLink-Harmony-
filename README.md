@@ -8,4 +8,4 @@
 <br>Our vision is to become a leading meteorological social platform in the country, driving societal attention to climate change and enhancing the ability to respond through data-driven decision-making and user participation. The platform will not only provide users with accurate weather forecasts but also enhance environmental awareness through community sharing and educational modules, forming a social interaction platform centered around climate change.
 ## 库
 ### Required Library
-# pandas、requests、bs4、json、sqlalchemy
+# pandas(1.4.4)、requests(2.28.1)、bs4(0.0.1)、json5(0.9.6)、sqlalchemy(1.4.39)
